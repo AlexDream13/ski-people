@@ -1,0 +1,125 @@
+.goods {
+
+   &__title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 1.2;
+      color: #1c1c1c;
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+         margin-bottom: 32px;
+      }
+
+      @media (min-width: 1024px) {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      column-gap: 8px;
+      row-gap: 32px;
+      @media (min-width: 768px){
+         grid-template-columns: repeat(3, 1fr);   
+      }
+      @media (min-width: 1024px) {
+         grid-template-columns: repeat(4, 1fr);
+         column-gap: 16px;
+         row-gap: 40px;
+      }
+   }
+
+}
+
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   width: 100%;;
+
+   &__link {
+      display: inline-block;
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 12px;
+
+      @media (min-width: 768px) {
+         margin-bottom: 19px;
+      }
+
+      @media (min-width: 1024px) {
+         margin-bottom: 16px;
+      }
+   }
+
+   &__image {
+      width: 100%;
+      object-fit: cover;
+   }
+
+   &__like-button {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      border: 0;
+      background-color: transparent;
+      z-index: 3;
+
+      svg {
+         path {
+            color: white;
+            stroke: #1C1C1C;
+         }
+
+      }
+   }
+
+   &__info {
+      margin-bottom: 12px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 18px;
+
+      @media (min-width: 768px) {
+         flex-direction: row;
+         justify-content: space-between;
+         margin-bottom: 40px;
+      }
+
+      @media (min-width: 1024px) {
+         margin-bottom: 18px;
+      }
+
+      &-title {
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 1.2;
+         color: #1c1c1c;
+         @media (min-width: 768px){
+            font-size: 16px;  
+         }
+      }
+
+      &-price {
+         font-size: 16px;
+         @media (min-width: 768px){
+             font-size: 20px; 
+         }
+      }
+   }
+
+
+   &__button {
+      border: 1px solid #0044f0;
+      border-radius: 32px;
+      width: 100%;
+      height: 38px;
+      color: #0044f0;
+   }
+}

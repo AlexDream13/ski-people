@@ -1,0 +1,44 @@
+.catalog {
+   overflow-x: auto;
+   padding-top: 10px;
+   padding-bottom: 20px;
+
+   @media (min-width:768px) {
+      padding-top: 14px;
+      padding-bottom: 32px;
+   }
+
+   @media (min-width:1024px) {
+      padding-top: 22px;
+      padding-bottom: 40px;
+   }
+
+   &__list {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+   }
+
+   &__link {
+      display: block;
+      color: #969eae;
+      border-radius: 32px;
+      padding: 11px 14px;
+      background: #eeeff2;
+      border: 1px solid transparent;
+      cursor: pointer;
+      @media (hover: hover) and (pointer: fine) {
+         &:hover {
+            border: 1px solid #0044f0;
+            color: #0044f0;
+         }
+      }
+     
+
+      &--active {
+         background: #0044f0;
+         color: #fff;
+      }
+
+   }
+}

@@ -1,0 +1,151 @@
+.product {
+   padding: 24px 0 60px;
+
+   &__container {}
+
+   &__title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 1.2;
+      color: #1c1c1c;
+      margin-bottom: 24px;
+
+      @media (min-width: 768px) {
+         font-size: 32px;
+      }
+
+      @media (min-width: 1024px) {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+
+      @media (min-width: 768px) {
+         flex-direction: row;
+         gap: 14px;
+      }
+
+      @media (min-width: 1024px) {
+         gap: 16px;
+      }
+   }
+
+   &__slider {}
+
+   &__slider-image {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 14px;
+
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+
+   &__slider-thumbnails {
+      display: none;
+
+      @media (min-width: 768px) {
+         display: grid;
+         grid-template-columns: repeat(4, 1fr);
+         gap: 14px;
+
+         img {
+            width: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+         }
+      }
+   }
+
+   &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+     
+      @media (min-width: 768px) {
+         width: 45%;
+        
+      }
+      @media (min-width: 1024px) {
+         width: 34%;
+      }
+
+   }
+
+   &__info-price {
+      font-size: 20px;
+      margin-bottom: 12px;
+   }
+
+   &__info-id {
+      display: inline-block;
+      border-radius: 32px;
+      padding: 4px 8px;
+      background: #eeeff2;
+      margin-bottom: 24px;
+   }
+
+   &__info-title {
+      font-size: 16px;
+      margin-bottom: 12px;
+   }
+
+   &__table {
+      width: 100%;
+      margin-bottom: 24px;
+
+      &-row {
+         display: flex;
+         justify-content: space-between;
+         border-bottom: 1px solid #eeeff2;
+         padding-block: 8px;
+      }
+
+      &-name {
+         color: #969eae;
+      }
+
+      &-value {
+         color: #1c1c1c;
+      }
+   }
+   &__buttons{
+      width: 100%;
+      display: flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 12px;
+   }
+   &__button {
+      border: 1px solid #0044f0;
+      border-radius: 32px;
+      width: 100%;
+      height: 38px;
+      background: #0044f0;
+      color: #fff;
+   }
+
+   &__button-like {
+      min-width: 16px;
+      height: 16px;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+      color: #fff;
+      
+      svg {
+         width: 100%;
+         height: 100%;
+          path {
+            stroke: #1C1C1C;
+         }
+      }
+   }
+}
