@@ -8,7 +8,10 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^6.2.0"
+  "devDependencies": { 
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^6.2.0",
+    "vite-plugin-image-optimizer": "^1.1.8"
   }
 }
